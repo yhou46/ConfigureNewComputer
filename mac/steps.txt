@@ -1,0 +1,21 @@
+# Step 1: Install Xcode
+
+# Step 2: Configure .bash_profile
+https://github.com/yhou46/bash
+
+# Step 3: install homebrew (pachage management software)
+http://brew.sh
+
+#Step 4: update bash to latest version
+## Homebrew required
+http://clubmate.fi/upgrade-to-bash-4-in-mac-os-x/
+
+## Scripts
+### install latest bash
+brew update && brew install bash
+
+### map newly installed bash to system shell
+sudo bash -c 'echo /usr/local/bin/bash >> /etc/shells'
+
+### make Terminal pick up the newly bash
+chsh -s /usr/local/bin/bash
